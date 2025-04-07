@@ -99,7 +99,8 @@ int main() {
     } else {
         printf("Carta(2) VENCEU ! \n");
     }
-    
+
+    printf("---------------------------------------------\n");
     printf("Area  (KM²)\n");
     printf("Carta 1 - %s: %.2f KM² \n", nome_C1, area_C1);
     printf("Carta 2 - %s: %.2f KM² \n", nome_C2, area_C2);
@@ -109,7 +110,7 @@ int main() {
     } else{
         printf("Carta(2) VENCEU ! \n");
     }
-   
+    printf("---------------------------------------------\n");
     printf("PIB (R$)\n");
     printf("Carta 1 - %s: R$ %.2f \n", nome_C1, PIB_C1);
     printf("Carta 2 - %s: R$ %.2f \n", nome_C2, PIB_C2);
@@ -120,6 +121,7 @@ int main() {
         printf ("Carta(2) VENCEU ! \n");
     }
 
+    printf("---------------------------------------------\n");
     printf("Pontos Turisticos \n");
     printf("Carta 1 - %s: %d \n", nome_C1, pontos_turis_C1);
     printf("Carta 2 - %s: %d \n", nome_C2, pontos_turis_C2);
@@ -130,7 +132,8 @@ int main() {
         printf("Carta(2) VENCEU! \n");
         
     }
-    
+
+    printf("---------------------------------------------\n");
     printf("Densidade Populacional\n");
     printf("Carta 1 - %s: %.2f \n", nome_C1, densi_populacional1);
     printf("Carta 2 - %s: %.2f \n", nome_C2, densi_populacional2);
@@ -141,6 +144,7 @@ int main() {
         printf("Carta(2) VENCEU ! \n");
     }
     
+    printf("---------------------------------------------\n");
     printf("PIB Per Capta (R$) \n");
     printf("Carta 1 - %s: R$ %.2f \n", nome_C1, PIB_per_capita1);
     printf("Carta 2 - %s: R$ %.2f \n", nome_C2, PIB_per_capita2);
@@ -151,6 +155,7 @@ int main() {
         printf("Carta(2) VENCEU !\n");
     }
 
+    printf("---------------------------------------------\n");
     printf("Super Poder\n");
     printf("Carta 1 - %s: %.2f \n", nome_C1, superpoder1);
     printf("Carta 2 - %s: %.2f \n", nome_C2, superpoder2);
@@ -160,7 +165,8 @@ int main() {
     } else {
         printf("Carta(2) VENCEU ! \n");
     }
-    
+    printf("---------------------------------------------\n");
+    printf("FIM...\n");
     
     
     
