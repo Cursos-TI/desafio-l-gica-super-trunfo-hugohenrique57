@@ -177,7 +177,7 @@ int main() {
             
                 if(densi_populacional1 < densi_populacional2) {
                     printf("Carta(1) VENCEU ! \n");
-                } else if (densi_populacional2 > densi_populacional1) {
+                } else if (densi_populacional2 < densi_populacional1) {
                     printf("Carta(2) VENCEU ! \n");
                 } else
                     printf("EMPATE!");
