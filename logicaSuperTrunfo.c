@@ -386,9 +386,11 @@ int main()
             printf("--------------------------------------------------\n");
             if(resultado1 == 1 && resultado2 == 1 ){
                 printf("Carta1 venceu!\n");
-            } else if (resultado1 > 1 && resultado2 > 1){
+            } else if   (resultado1 == 999 && resultado2 == 999 || resultado1 == 999 && resultado2 == 0 
+                        || resultado2 == 999 && resultado1 == 1 || resultado1 == 1 && resultado2 == 0
+                        ||  resultado1 == 0 && resultado2 == 1){
                 printf("EMPATOU!\n");
-            } else {
+            } else { if(resultado1 == 0 && resultado2 == 0)
                 printf("carta2 venceu\n");
             }
 
