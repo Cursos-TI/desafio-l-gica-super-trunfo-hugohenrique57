@@ -120,23 +120,25 @@ int main()
         {
             case 1: 
                 printf("Você escolheu o atributo: (População)\n");
+
                 resultado1 = populacao1 > populacao2 ? 1 : 0;
                 printf("--------------------------------------------------\n");
-                printf("carta 1 - %s população:%lu \n", nome_C1, populacao1);
-                printf("carta 2 - %s população:%lu \n", nome_C2, populacao2);
+                printf("carta 1 - %s população:%lu\n", nome_C1, populacao1);
+                printf("carta 2 - %s população:%lu\n", nome_C2, populacao2);
                 printf("--------------------------------------------------\n");
                 if(populacao1 > populacao2){
                     printf("Carta 1 - %s venceu a rodade !\n", nome_C1);
                 } else if (populacao1 < populacao2) {
                     printf("Carta 2 - %s venceu a rodada !\n", nome_C2);
                 } else{
+                    resultado1 = 999;
                     printf("empate!\n");
                 }
                
             break;
             case 2:
                 printf("Você escolheu o atributo: (Área KM²)\n");
-                resultado1 = area_C1 > area_C2 ? 1 : 0;
+                resultado1 =  area_C1 > area_C2 ? 1 : 0;
                 printf("--------------------------------------------------\n");
                 printf("carta 1 - %s área(KM²):%.2f\n", nome_C1, area_C1);
                 printf("carta 2 - %s área(KM²):%.2f\n", nome_C2, area_C2);
@@ -146,6 +148,7 @@ int main()
                 } else if (area_C1 < area_C2) {
                     printf("Carta 2 - %s venceu a rodada !\n", nome_C2);
                 } else{
+                    resultado1 = 999;
                     printf("empate!\n");
                 }
               
@@ -163,6 +166,7 @@ int main()
                 } else if (PIB_C1 < PIB_C2) {
                     printf("Carta 2 - %s venceu a rodada !\n", nome_C2);
                 } else{
+                    resultado1 = 999;
                     printf("empate!\n");
                 }
                
@@ -180,6 +184,7 @@ int main()
                 } else if (pontos_turis_C1 < pontos_turis_C2) {
                     printf("Carta 2 - %s venceu a rodada !\n", nome_C2);
                 } else{
+                    resultado1 = 999;
                     printf("empate!\n");
                 }
             break;
@@ -195,6 +200,7 @@ int main()
                 } else if (densi_populacional1 < densi_populacional2) {
                     printf("Carta 2 - %s venceu a rodada !\n", nome_C2);
                 } else{
+                    resultado1 = 999;
                     printf("empate!\n");
                 }
 
@@ -212,6 +218,7 @@ int main()
                 } else if (PIB_per_capita1 < PIB_per_capita2) {
                     printf("Carta 2 - %s venceu a rodada !\n", nome_C2);
                 } else{
+                    resultado1 = 999;
                     printf("empate!\n");
                 }
 
@@ -228,6 +235,7 @@ int main()
             } else if (superpoder1 < superpoder2) {
                 printf("Carta 2 - %s venceu a rodada !\n", nome_C2);
             } else{
+                resultado1 = 999;
                 printf("empate!\n");
             }
             break;
@@ -252,7 +260,6 @@ int main()
             switch (atributo2)
             {
                 case 1: 
-                    printf("--------------------------------------------------\n");
                     printf("Você escolheu o atributo: (População)\n");
                     resultado2 = populacao1 > populacao2 ? 1 : 0;
                     printf("--------------------------------------------------\n");
@@ -264,6 +271,7 @@ int main()
                     } else if (populacao1 < populacao2) {
                         printf("Carta 2 - %s venceu a rodada !\n", nome_C2);
                     } else{
+                        resultado2 = 999;
                         printf("empate!\n");
                     }
                    
@@ -280,6 +288,7 @@ int main()
                     } else if (area_C1 < area_C2) {
                         printf("Carta 2 - %s venceu a rodada !\n", nome_C2);
                     } else{
+                        resultado2 = 999;
                         printf("empate!\n");
                     }
                   
@@ -297,6 +306,7 @@ int main()
                     } else if (PIB_C1 < PIB_C2) {
                         printf("Carta 2 - %s venceu a rodada !\n", nome_C2);
                     } else{
+                        resultado2 = 999;
                         printf("empate!\n");
                     }
                    
@@ -314,6 +324,7 @@ int main()
                     } else if (pontos_turis_C1 < pontos_turis_C2) {
                         printf("Carta 2 - %s venceu a rodada !\n", nome_C2);
                     } else{
+                        resultado2 = 999;
                         printf("empate!\n");
                     }
                 break;
@@ -329,6 +340,7 @@ int main()
                     } else if (densi_populacional1 < densi_populacional2) {
                         printf("Carta 2 - %s venceu a rodada !\n", nome_C2);
                     } else{
+                        resultado2 = 999;
                         printf("empate!\n");
                     }
     
@@ -338,14 +350,15 @@ int main()
                     printf("Você escolheu o atributo: (PIB per Capta)\n");
                     resultado2 = PIB_per_capita1 > PIB_per_capita2 ? 1 : 0;
                     printf("--------------------------------------------------\n");
-                    printf("carta 1 - %s PIB Per Capta:%f\n", nome_C1, PIB_per_capita1);
-                    printf("carta 2 - %s PIB Per Capta:%f\n", nome_C2, PIB_per_capita2);
+                    printf("carta 1 - %s PIB Per Capta:%.2f\n", nome_C1, PIB_per_capita1);
+                    printf("carta 2 - %s PIB Per Capta:%.2f\n", nome_C2, PIB_per_capita2);
                     printf("--------------------------------------------------\n");
                     if(PIB_per_capita1 > PIB_per_capita2){
                         printf("Carta 1 - %s venceu a rodade !\n", nome_C1);
                     } else if (PIB_per_capita1 < PIB_per_capita2) {
                         printf("Carta 2 - %s venceu a rodada !\n", nome_C2);
                     } else{
+                        resultado2 = 999;
                         printf("empate!\n");
                     }
     
@@ -362,6 +375,7 @@ int main()
                 } else if (superpoder1 < superpoder2) {
                     printf("Carta 2 - %s venceu a rodada !\n", nome_C2);
                 } else{
+                    resultado2 = 999;
                     printf("empate!\n");
                 }
                 break;
@@ -370,13 +384,18 @@ int main()
                 break;
             }
             printf("--------------------------------------------------\n");
-            if((resultado1 == 1) &&(resultado2 == 1)){
-                printf("Carta 1 - %s VENCEU A COMPETIÇÃO!\n", nome_C1);
-            } else if ((resultado1 == 1) && (resultado2 == 0) || (resultado1 == 0) && (resultado2 == 1) ){
-                printf("A COMPETIÇÃO EMPATOU!\n");
-            } else if ((resultado1 == 0) && (resultado2 == 0)){
-                printf("carta 2 - %s VENCEU A COMPETIÇÃO!\n", nome_C2);
+            if(resultado1 == 1 && resultado2 == 1 ){
+                printf("Carta1 venceu!\n");
+            } else if (resultado1 > 1 && resultado2 > 1){
+                printf("EMPATOU!\n");
+            } else {
+                printf("carta2 venceu\n");
             }
+
+        
+        
+        
+
 
         }
 
@@ -404,11 +423,9 @@ int main()
         printf("SAINDO...\n");
     break;
     default:
-        printf("Opção invalida!\n");
     break;
     }
 
     return 0;
 
-    
 }
